@@ -3,7 +3,7 @@ import { GraduationCap, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Youtu
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-primary px-3 text-primary-foreground">
       <div className="container-max">
         {/* Main Footer */}
         <div className="py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -24,7 +24,7 @@ export default function Header() {
       <div className="container-max">
         <div className="flex items-center justify-between h-16">
           {/* Logo and School Name */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 pl-2">
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <GraduationCap className="w-6 h-6 text-primary-foreground" />
             </div>
@@ -35,7 +35,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -48,7 +48,7 @@ export default function Header() {
           </nav>
 
           {/* Action Buttons */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden lg:flex items-center space-x-3">
             <Link href="/student-portal">
               <Button variant="outline" size="sm" className="flex items-center space-x-2 bg-transparent">
                 <User className="w-4 h-4" />
@@ -64,9 +64,9 @@ export default function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          <div className="lg:hidden">
+            <Button variant="ghost" size="lg" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X className="w-full h-full" /> : <Menu className="w-full h-full" />}
             </Button>
           </div>
         </div>
